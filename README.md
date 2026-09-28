@@ -90,7 +90,7 @@ Each release APK is cryptographically signed using the official Agent Bankers pr
 
 | Asset | Size | SHA-256 Checksum |
 |---|---|---|
-| `ABAG-v1.0.apk` | 19.4 MB | `0a57426db3bb26d4919b049a2af96f4a1167faa1a7732df4f7d250347a05d9c4` |
+| `ABAG-v1.0.apk` | 19.2 MB | `a651f80a1f773333d8e7826d084ab93cc3da4d58a3161d577881268377cb9417` |
 
 To verify on your system:
 ```bash
