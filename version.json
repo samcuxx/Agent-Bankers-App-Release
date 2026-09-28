@@ -2,13 +2,13 @@
   "versionCode": 1,
   "versionName": "1.0",
   "tag_name": "v1.0",
-  "name": "Agent Bankers v1.0",
-  "body": "Official v1.0 release of Agent Bankers Mobile Application.\n\n### Key Features\n- High-speed automated USSD transaction execution (MTN MoMo, Telecel Cash, AT Money)\n- Direct partner bank float settlement (Ecobank, GCB, Stanbic)\n- Multi-branch teller cash drawer reconciliation\n- Location-verified attendance geofencing & fraud prevention shield\n- In-app Over-The-Air (OTA) updates directly from GitHub",
-  "download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk",
+  "name": "ABAG v1.0",
+  "body": "Official v1.0 release of ABAG Mobile Application.\n\n### Key Features\n- High-speed automated USSD transaction execution (MTN MoMo, Telecel Cash, AT Money)\n- Direct partner bank float settlement (Ecobank, GCB, Stanbic)\n- Multi-branch teller cash drawer reconciliation\n- Location-verified attendance geofencing & fraud prevention shield\n- In-app Over-The-Air (OTA) updates directly from GitHub",
+  "download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk",
   "assets": [
     {
-      "name": "AgentBanker-v1.0.apk",
-      "browser_download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk",
+      "name": "ABAG-v1.0.apk",
+      "browser_download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk",
       "size": 19488346,
       "sha256": "0a57426db3bb26d4919b049a2af96f4a1167faa1a7732df4f7d250347a05d9c4"
     }

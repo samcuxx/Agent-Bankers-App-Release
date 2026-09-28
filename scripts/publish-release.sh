@@ -17,4 +17,4 @@ git push origin "${TAG}"
 
 echo "==> Tag pushed successfully!"
 echo "Now visit: https://github.com/samcuxx/Agent-Bankers-App-Release/releases/new?tag=${TAG}"
-echo "Upload your built APK (AgentBanker-${TAG}.apk) and publish the release."
+echo "Upload your built APK (ABAG-${TAG}.apk) and publish the release."

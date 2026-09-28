@@ -3,14 +3,14 @@
 <div align="center">
 
 [![Release](https://img.shields.io/badge/Release-v1.0-5F0E25?style=for-the-badge&logo=github)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-emerald?style=for-the-badge)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
 [![Region](https://img.shields.io/badge/Region-Ghana%20🇬🇭-FCD116?style=for-the-badge)](https://agentbankers.org)
 
 **The official public distribution repository for the Agent Bankers Android Terminal application.**  
 *Powers agency banking, mobile money settlement, USSD automation, and multi-wallet float operations across Ghana.*
 
-[Download AgentBanker-v1.0.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
+[Download ABAG-v1.0.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
 
 </div>
 
@@ -34,8 +34,8 @@ The **Agent Bankers Mobile Application** is a native Android terminal built spec
 ### Option 1: Direct Download
 Click below to download the official production APK:
 
-- **Direct Download (v1.0)**: [AgentBanker-v1.0.apk (19 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk)
-- **Latest Release Channel**: [AgentBanker-latest.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-latest.apk)
+- **Direct Download (v1.0)**: [ABAG-v1.0.apk (19 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk)
+- **Latest Release Channel**: [ABAG-latest.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-latest.apk)
 - **Agent Bankers Web Platform**: [https://agentbankers.org/api/download-app](https://agentbankers.org/api/download-app)
 - **Agency Portals**: Accessible via each registered agency's dedicated portal landing page.
 
@@ -44,7 +44,7 @@ Click below to download the official production APK:
 ### Option 2: Step-by-Step Android Installation
 
 1. **Download the APK**:
-   - Open your mobile browser and download [`AgentBanker-v1.0.apk`](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk).
+   - Open your mobile browser and download [`ABAG-v1.0.apk`](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk).
 
 2. **Enable Unknown Apps (First-time installation)**:
    - When prompted that the download may be harmful or that your browser is not authorized to install unknown apps, tap **Settings**.
@@ -90,11 +90,11 @@ Each release APK is cryptographically signed using the official Agent Bankers pr
 
 | Asset | Size | SHA-256 Checksum |
 |---|---|---|
-| `AgentBanker-v1.0.apk` | 19.4 MB | `0a57426db3bb26d4919b049a2af96f4a1167faa1a7732df4f7d250347a05d9c4` |
+| `ABAG-v1.0.apk` | 19.4 MB | `0a57426db3bb26d4919b049a2af96f4a1167faa1a7732df4f7d250347a05d9c4` |
 
 To verify on your system:
 ```bash
-sha256sum releases/AgentBanker-v1.0.apk
+sha256sum releases/ABAG-v1.0.apk
 ```
 
 ---
