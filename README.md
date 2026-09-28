@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![Latest Release](https://img.shields.io/github/v/release/samcuxx/Agent-Bankers-App-Release?style=for-the-badge&color=5F0E25&label=Latest%20Release)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
+[![Release](https://img.shields.io/badge/Release-v1.0-5F0E25?style=for-the-badge&logo=github)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-emerald?style=for-the-badge)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
 [![Region](https://img.shields.io/badge/Region-Ghana%20🇬🇭-FCD116?style=for-the-badge)](https://agentbankers.org)
 
 **The official public distribution repository for the Agent Bankers Android Terminal application.**  
 *Powers agency banking, mobile money settlement, USSD automation, and multi-wallet float operations across Ghana.*
 
-[Download Latest APK](https://github.com/samcuxx/Agent-Bankers-App-Release/releases/latest) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
+[Download AgentBanker-v1.0.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
 
 </div>
 
@@ -32,9 +32,10 @@ The **Agent Bankers Mobile Application** is a native Android terminal built spec
 ## 🚀 Download & Installation Guide
 
 ### Option 1: Direct Download
-Click below to view and download the latest production APK:
+Click below to download the official production APK:
 
-- **GitHub Releases**: [https://github.com/samcuxx/Agent-Bankers-App-Release/releases/latest](https://github.com/samcuxx/Agent-Bankers-App-Release/releases/latest)
+- **Direct Download (v1.0)**: [AgentBanker-v1.0.apk (19 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk)
+- **Latest Release Channel**: [AgentBanker-latest.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-latest.apk)
 - **Agent Bankers Web Platform**: [https://agentbankers.org/api/download-app](https://agentbankers.org/api/download-app)
 - **Agency Portals**: Accessible via each registered agency's dedicated portal landing page.
 
@@ -43,8 +44,7 @@ Click below to view and download the latest production APK:
 ### Option 2: Step-by-Step Android Installation
 
 1. **Download the APK**:
-   - Open your mobile browser and navigate to the latest release on this repository.
-   - Tap on the `.apk` asset under the latest release (e.g., `AgentBanker-v2.4.0.apk`) to download.
+   - Open your mobile browser and download [`AgentBanker-v1.0.apk`](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/AgentBanker-v1.0.apk).
 
 2. **Enable Unknown Apps (First-time installation)**:
    - When prompted that the download may be harmful or that your browser is not authorized to install unknown apps, tap **Settings**.
@@ -65,13 +65,13 @@ Click below to view and download the latest production APK:
 ## 🔄 How the Update System Works
 
 This repository functions as the central single source of truth for both:
-1. **The Web Platform**: When users or agency staff click "Download Application" on any web landing page or agency portal, the backend API (`/api/download-app`) queries this repository's GitHub Releases API, finds the latest `.apk` release asset, and redirects to its direct CDN download URL.
-2. **The Mobile Application**: The Android app's `MainViewModel` periodically polls `https://api.github.com/repos/samcuxx/Agent-Bankers-App-Release/releases/latest`. If a version newer than the installed package is detected, an in-app update banner with release notes is presented, allowing one-tap background download and installation.
+1. **The Web Platform**: When users or agency staff click "Download Application" on any web landing page or agency portal, the backend API (`/api/download-app`) queries this repository's GitHub Releases API (and falls back directly to the hosted repository APK release asset), redirecting visitors directly to the download stream.
+2. **The Mobile Application**: The Android app's `MainViewModel` periodically polls `https://api.github.com/repos/samcuxx/Agent-Bankers-App-Release/releases/latest` (and falls back to `version.json`). If a version newer than the installed package is detected, an in-app update banner with release notes is presented, allowing one-tap background download and installation.
 
 ```
 ┌─────────────────────────────────┐
 │ Agent-Bankers-App-Release (Git) │
-│    [GitHub Releases / APKs]     │
+│ [Releases APKs & version.json]  │
 └───────────────┬─────────────────┘
                 │
         ┌───────┴───────┐
@@ -84,44 +84,18 @@ This repository functions as the central single source of truth for both:
 
 ---
 
-## 🛠 Publishing a New Release (Maintainers)
+## 🔐 Checksums & Security Verification
 
-To release a new version of the mobile application:
+Each release APK is cryptographically signed using the official Agent Bankers production signing key (verified with Android APK Signature Scheme v2).
 
-1. **Build the Release APK**:
-   ```bash
-   cd Agent-Bankers-Mobile
-   ./gradlew assembleRelease
-   ```
-   The APK will be generated at `app/build/outputs/apk/release/app-release.apk`.
+| Asset | Size | SHA-256 Checksum |
+|---|---|---|
+| `AgentBanker-v1.0.apk` | 19.4 MB | `0a57426db3bb26d4919b049a2af96f4a1167faa1a7732df4f7d250347a05d9c4` |
 
-2. **Tag the Release**:
-   ```bash
-   git tag -a v2.4.0 -m "Release v2.4.0"
-   git push origin v2.4.0
-   ```
-
-3. **Create the GitHub Release**:
-   - Go to [Agent-Bankers-App-Release/releases/new](https://github.com/samcuxx/Agent-Bankers-App-Release/releases/new).
-   - Select the tag (e.g. `v2.4.0`).
-   - Title: `Agent Bankers v2.4.0` (matching the version name in `build.gradle.kts`).
-   - Write clear release notes detailing new features and bug fixes.
-   - **Attach the APK asset** (name format: `AgentBanker-v2.4.0.apk`).
-   - Click **Publish release**.
-
-Once published, all web landing pages and installed mobile apps will automatically detect and serve the new release!
-
----
-
-## 🔐 Security & Verification
-
-Each release APK is cryptographically signed. To verify the SHA-256 integrity of a downloaded APK:
-
+To verify on your system:
 ```bash
-sha256sum AgentBanker-v2.4.0.apk
+sha256sum releases/AgentBanker-v1.0.apk
 ```
-
-Compare the checksum with the SHA-256 hash provided in each release's notes.
 
 ---
 

@@ -1,6 +1,5 @@
 .DS_Store
 Thumbs.db
-*.apk
 *.aab
 *.log
 .idea/
