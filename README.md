@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![Release](https://img.shields.io/badge/Release-v1.0-5F0E25?style=for-the-badge&logo=github)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk)
+[![Release](https://img.shields.io/badge/Release-v1.1-5F0E25?style=for-the-badge&logo=github)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.1.apk)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-emerald?style=for-the-badge)](https://github.com/samcuxx/Agent-Bankers-App-Release/releases)
 [![Region](https://img.shields.io/badge/Region-Ghana%20🇬🇭-FCD116?style=for-the-badge)](https://agentbankers.org)
 
 **The official public distribution repository for the Agent Bankers Android Terminal application.**  
 *Powers agency banking, mobile money settlement, USSD automation, and multi-wallet float operations across Ghana.*
 
-[Download ABAG-v1.0.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
+[Download ABAG-v1.1.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.1.apk) • [Browse All Releases](https://github.com/samcuxx/Agent-Bankers-App-Release/releases) • [Web Portal](https://agentbankers.org)
 
 </div>
 
@@ -34,8 +34,9 @@ The **Agent Bankers Mobile Application** is a native Android terminal built spec
 ### Option 1: Direct Download
 Click below to download the official production APK:
 
-- **Direct Download (v1.0)**: [ABAG-v1.0.apk (19 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk)
+- **Direct Download (v1.1)**: [ABAG-v1.1.apk (19.3 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.1.apk)
 - **Latest Release Channel**: [ABAG-latest.apk](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-latest.apk)
+- **Legacy Release (v1.0)**: [ABAG-v1.0.apk (19.2 MB)](https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk)
 - **Agent Bankers Web Platform**: [https://agentbankers.org/api/download-app](https://agentbankers.org/api/download-app)
 - **Agency Portals**: Accessible via each registered agency's dedicated portal landing page.
 
@@ -90,11 +91,17 @@ Each release APK is cryptographically signed using the official Agent Bankers pr
 
 | Asset | Size | SHA-256 Checksum |
 |---|---|---|
+| `ABAG-v1.1.apk` | 19.3 MB | `aaaf43cff0e101b6c20c3f78df7a90249361b8fbc18f020f91f42c398f5ba81d` |
+| `ABAG-latest.apk` | 19.3 MB | `aaaf43cff0e101b6c20c3f78df7a90249361b8fbc18f020f91f42c398f5ba81d` |
 | `ABAG-v1.0.apk` | 19.2 MB | `a651f80a1f773333d8e7826d084ab93cc3da4d58a3161d577881268377cb9417` |
+
+### App Signing Certificate Fingerprint (Production Keystore)
+- **SHA-256**: `FE:D9:14:48:47:EF:1A:41:9E:39:D5:D9:25:A1:41:CC:C1:5E:53:CD:AF:7F:E0:22:E9:B3:52:1E:14:2F:28:A5`
+- **SHA-1**: `FA:4B:AC:F5:38:46:B0:9E:27:B1:99:71:5F:08:57:0B:C0:D6:82:C0`
 
 To verify on your system:
 ```bash
-sha256sum releases/ABAG-v1.0.apk
+sha256sum releases/ABAG-v1.1.apk
 ```
 
 ---

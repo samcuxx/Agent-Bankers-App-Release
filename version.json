@@ -1,17 +1,23 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0",
-  "tag_name": "v1.0",
-  "name": "ABAG v1.0",
-  "body": "Official v1.0 release of ABAG Mobile Application.\n\n### Key Features\n- High-speed automated USSD transaction execution (MTN MoMo, Telecel Cash, AT Money)\n- Direct partner bank float settlement (Ecobank, GCB, Stanbic)\n- Multi-branch teller cash drawer reconciliation\n- Location-verified attendance geofencing & fraud prevention shield\n- In-app Over-The-Air (OTA) updates directly from GitHub",
-  "download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk",
+  "versionCode": 2,
+  "versionName": "1.1",
+  "tag_name": "v1.1",
+  "name": "ABAG v1.1 - Cash Calculator & Performance Enhancements",
+  "body": "Official v1.1 release of the Agent Bankers (ABAG) Mobile Terminal.\n\n### What's New in v1.1\n- **Cash Calculator Integration**: Full in-app physical cash counting terminal with instant denomination counters for all Ghana Cedi bank notes (¢200, ¢100, ¢50, ¢20, ¢10) and coins (¢5, ¢2, ¢1, ¢0.50, ¢0.20, ¢0.10).\n- **Agency Dynamic Branding**: The cash calculator and app headers dynamically adapt to the active agency's primary brand theme.\n- **Drawer Reconciliation Utilities**: One-tap quick reset, live subtotals, grand total calculation, and direct clipboard copying.\n- **Top Bar Quick Action**: Seamless one-tap access to the cash calculator directly from the dashboard header across Branch, Manager, and Individual roles.\n- **Performance & Reliability**: Enhanced USSD session reliability, updated build dependencies, and security enhancements.",
+  "download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.1.apk",
   "assets": [
     {
-      "name": "ABAG-v1.0.apk",
-      "browser_download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.0.apk",
-      "size": 19242264,
-      "sha256": "a651f80a1f773333d8e7826d084ab93cc3da4d58a3161d577881268377cb9417"
+      "name": "ABAG-v1.1.apk",
+      "browser_download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-v1.1.apk",
+      "size": 19259412,
+      "sha256": "aaaf43cff0e101b6c20c3f78df7a90249361b8fbc18f020f91f42c398f5ba81d"
+    },
+    {
+      "name": "ABAG-latest.apk",
+      "browser_download_url": "https://github.com/samcuxx/Agent-Bankers-App-Release/raw/main/releases/ABAG-latest.apk",
+      "size": 19259412,
+      "sha256": "aaaf43cff0e101b6c20c3f78df7a90249361b8fbc18f020f91f42c398f5ba81d"
     }
   ],
-  "published_at": "2026-09-28T06:54:00Z"
+  "published_at": "2026-10-02T05:46:00Z"
 }
